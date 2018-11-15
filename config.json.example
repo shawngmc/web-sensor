@@ -1,0 +1,23 @@
+{
+  "sensors": [
+      {
+          "name": "Get weather",
+          "module": "openweathermap",
+          "config": {
+              "values": {
+                  "temperature": true
+              },
+              "zip": 20171,
+              "apikey": "api_key_here",
+              "units": "imperial"
+          },
+          "frequency": "1 hour"
+      }
+  ],
+  "broker": {
+    "host": "",
+    "post": "",
+    "username": "",
+    "password": ""
+  }
+}
