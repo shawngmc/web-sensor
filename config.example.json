@@ -1,6 +1,7 @@
 {
     "sensors": [
         {
+            "name": "weather",
             "module": "openweathermap",
             "description": "Get basic weather info",
             "config": {

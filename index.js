@@ -42,16 +42,14 @@ let waitForConnection = function (client) {
 let main = async function () {
   let client = buildConnection();
   await waitForConnection(client);
-  let allResults = []
 
   for (var sensor of config.sensors) {
     let results = await runSensors(sensor);
     _.forOwn(results, async function(value, key) {
-      let topic = "websensor/" + sensor.module + "/" + key;
+      let topic = "websensor/" + sensor.name + "/" + key;
       await client.publish(topic, value.toString());
     })
   }
-
   await client.end();
 }
 
