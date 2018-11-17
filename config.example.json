@@ -1,0 +1,26 @@
+{
+    "sensors": [
+        {
+            "module": "openweathermap",
+            "description": "Get basic weather info",
+            "config": {
+                "values": {
+                    "temperature": true,
+                    "humidity": true,
+                    "windspeed": true,
+                    "conditions": true
+                },
+                "zip": 20171,
+                "apikey": "api_key_here",
+                "units": "imperial"
+            }
+        }
+    ],
+    "broker": {
+        "host": "mqtt.me.com",
+        "port": "4884",
+        "protocol": "wss",
+        "username": "websensor",
+        "password": "password"
+    }
+}
