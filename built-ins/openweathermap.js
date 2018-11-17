@@ -21,10 +21,20 @@ module.exports = {
 
     return rp(url)
       .then(function(res) {
+        console.log(res)
         var response = JSON.parse(res)
-        var results = [];
+        var results = {};
         if (config.values.temperature === true) {
-          results.push({"temperature": response.main.temp})
+          results["temperature"] = response.main.temp
+        }
+        if (config.values.humidity === true) {
+          results["humidity"] = response.main.humidity
+        }
+        if (config.values.windspeed === true) {
+          results["windspeed"] = response.wind.speed
+        }
+        if (config.values.conditions === true) {
+          results["conditions"] = response.weather.main
         }
 
         return results

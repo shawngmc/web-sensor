@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async-mqtt": "^2.0.0",
     "bluebird": "^3.5.3",
     "jsonpath": "^1.0.0",
     "lodash": "^4.17.11",
-    "mqtt": "^2.18.8",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }
