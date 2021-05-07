@@ -12,7 +12,7 @@
     "async-mqtt": "^2.0.0",
     "bluebird": "^3.5.3",
     "jsonpath": "^1.0.0",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }
